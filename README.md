@@ -1,5 +1,3 @@
-# fastcode
-
 ![Logo](logo.png)
 
 **fastcode** es un framework de PHP minimalista diseñado para desarrolladores
@@ -23,8 +21,10 @@ de la idea al código sin configuraciones pesadas ni dependencias obligatorias.
 ## 📁 Estructura de Directorios
 
 fastcode mantiene todo en su lugar sin complicaciones; es muy intuitivo y es
-fácil darse cuenta donde va cada cosa. Una aplicación en *fastcode* puede
-comenzar a funcionar con una estructura de archivos muy básica:
+fácil darse cuenta donde va cada cosa.
+
+Una aplicación en *fastcode* puede comenzar a funcionar con una estructura de
+archivos muy básica:
 
 ```text
 fastcode/
@@ -52,7 +52,7 @@ fastcode/
 │   └── database.php    # Credenciales (Host, User, Pass)
 ├── public/             # Punto de entrada único y assets (CSS, JS)
 │   └── index.php
-├── autoload.php        # Cargador automático de clases nativo. Estándar PSR-4
+├── Autoloader.php      # Cargador automático de clases nativo. Estándar PSR-4
 └── README.md
 ```
 
