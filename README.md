@@ -15,6 +15,10 @@ de la idea al código sin configuraciones pesadas ni dependencias obligatorias.
 - **Estructura Limpia:** Organización de directorios intuitiva y funcional.
 - **Extensible:** Compatible con Composer si decides añadir paquetes de terceros.
 - **Rendimiento Nativo:** Aprovecha al máximo la velocidad de PHP puro.
+- **Autoloading:** Implementa el estándar industrial **PSR-4**, lo que garantiza
+una carga de clases ultra rápida y organizada.
+- **Namespaces:** Detecta automaticamente tus clases al utilizar el espacio de
+nombres `Fastcode`.
 
 ---
 
@@ -90,3 +94,75 @@ copiar, modificar y distribuir **fastcode** libremente, incluso en proyectos
 comerciales, siempre que mantengas el aviso de copyright original.
 
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 🛠️ Instalación Rápida
+
+Para comenzar a usar **fastcode**, sigue estos sencillos pasos:
+
+- **Clona el repositorio** en tu servidor local:
+
+```bash
+git clone https://github.com/dariow56/fastcode.git
+```
+
+---
+
+## 💻 Ejemplo de Uso
+
+En **fastcode**, inicializar tu aplicación y crear una respuesta es
+extremadamente sencillo. Todo sucede dentro de:
+
+`src/App.php` & `public/index.php`
+
+Comencemos por una plantilla muy básica en tu `src/App.php`:
+
+```php
+<?php
+namespace Fastcode;
+
+class App {
+    public function run() {
+        echo "<h1>⚡ fastcode está en marcha</h1>";
+        echo "<p>🚀 ¡El motor del framework ha arrancado con éxito!</p>";
+    }
+}
+```
+
+Ahora veamos que sucede dentro de tu `public/index.php`:
+
+```php
+<?php
+// Cargar el autoloader nativo
+require_once '../Autoloader.php';
+
+// Incluir clases usando use:
+use Fastcode\App;
+
+// Instanciar el núcleo del framework
+$app = new App();
+
+// Ejecutar la aplicación
+$app->run();
+```
+
+---
+
+## 📚 Documentación
+
+¿Ahora que sigue? **fastcode** no te limita, tampoco lo hagas tú, el proyecto
+crecerá tanto como tú lo decidas; dale rienda suelta a tu creatividad.
+
+¿Listo para empezar? Hemos preparado guías detalladas para que domines
+**fastcode** en minutos:
+
+- 🚀 [**Guía de Inicio Rápido**](docs/inicio_rapido.md): ¡Comencemos por lo orilla!
+
+- 🛣️ [Sistema de Rutas](): (Próximamente) 📆
+
+- 🎨 [Sistema de Vistas]() (Próximamente) 📆
+
+- 🗃️ [Base de Datos]() (Próximamente) 📆
+
+- 💻 [Manejo de Sesiones]() (Próximamente) 📆

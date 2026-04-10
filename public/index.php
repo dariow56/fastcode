@@ -1,16 +1,15 @@
 <?php
 
-// Requiere el Autoloader nativo
+// Cargar el Autoloader nativo
 require_once '../Autoloader.php';
 
 // Inicia el Autoloader
 Autoloader::register();
 
-// Carga la clase App
+// Incluir las clases usando use:
 use Fastcode\core\App;
 
-// Crea la instancia de la clase App
-$app = new App;
-
-// Inicia la instancia de la App
+// Instanciar el núcleo del framework
+$app = new App();
+// Ejecutar la aplicación
 $app->run();
