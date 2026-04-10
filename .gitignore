@@ -1,0 +1,13 @@
+# Dependencias
+/vendor/
+
+# Configuración del editor
+.vscode/
+.idea/
+
+# Logs & temporales
+*.log
+/temp/
+
+# Variables de entorno 
+.env
