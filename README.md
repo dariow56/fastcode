@@ -52,8 +52,7 @@ fastcode/
 │   └── database.php    # Credenciales (Host, User, Pass)
 ├── public/             # Punto de entrada único y assets (CSS, JS)
 │   └── index.php
-├── Autoloader.php      # Cargador automático de clases nativo. Estándar PSR-4
-└── README.md
+└── Autoloader.php      # Cargador automático de clases nativo. Estándar PSR-4
 ```
 
 ---
