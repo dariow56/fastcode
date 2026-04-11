@@ -4,9 +4,11 @@ namespace Fastcode\core;
 
 class App
 {
-	function run()
+	public function run()
 	{
-		echo "<h1>⚡ Fastcode está en marcha</h1>";
-		echo "<p>¡framework arrancado con exito!</p>";
+		return View::render('home', [
+			'titulo' => 'Fastcode',
+			'estado' => 'Sistema de vistas funcionando con éxito.'
+		]);
 	}
 }
