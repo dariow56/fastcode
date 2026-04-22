@@ -8,13 +8,16 @@ Autoloader::register();
 
 // Incluir las clases usando use
 use Fastcode\core\App;
-use Fastcode\core\View;
 use Fastcode\core\Debug;
+use Fastcode\core\Config;
 use Fastcode\controllers\HomeController;
 
 // Despliega los errores de compilación
 // Opción solo para modo develop; deshabilitarla en modo deploy.
 Debug::display_errors();
+
+// Carga las variables de entorno en nuestro sistema
+Config::load('../.env');
 
 // Instanciar el núcleo del framework
 $app = new App();

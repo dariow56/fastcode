@@ -1,11 +1,12 @@
 <?php
 
-// Archivo de configuración para la conexión a la base de datos.
+// Este archivo solo retorna un arreglo con los datos de conexión. 
+// Separa los datos de la lógica.
 return [
-	'host' => 'localhost',
-	'database' => 'fastcode',
-	'username' => 'root',
-	'password' => '',
-	'driver' => 'mysql',
-	'charset' => 'utf8mb4'
+	'host' 		=> $_ENV['DB_HOST'],
+	'database' 	=> $_ENV['DB_NAME'],
+	'username' 	=> $_ENV['DB_USER'],
+	'password' 	=> $_ENV['DB_PASS'],
+	'driver' 	=> 'mysql',
+	'charset' 	=> 'utf8mb4'
 ];
