@@ -3,10 +3,13 @@
 namespace Fastcode\core;
 
 class App {
+	public $router;
+
+	public function __construct() {
+		$this->router = new Router();
+	}
+
 	public function run() {
-		return View::render('home', [
-			'titulo' => 'Fastcode',
-			'estado' => 'Sistema de vistas funcionando con éxito.'
-		]);
+		$this->router->resolve();
 	}
 }
